@@ -1,6 +1,6 @@
 // Функция для загрузки содержимого страниц
 function loadPage(page) {
-    const pagePath = `./pages/${page}.html`;
+    const pagePath = `../pages/${page}.html`;
 
     fetch(pagePath)
         .then(response => {
@@ -12,6 +12,7 @@ function loadPage(page) {
         })
         .catch(error => {
             console.error(error);
+            console.errpr(`The path was ./pages/${page}.html`)
             document.querySelector("main").innerHTML = "<p>Error loading page 😿</p><p>Вероятно, такой страницы просто нет.</p";
         });
 }
