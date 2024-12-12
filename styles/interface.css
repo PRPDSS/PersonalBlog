@@ -18,8 +18,10 @@ body {
 
 footer {
     flex-shrink: 0;
-    background-color: #f1f1f1;
+    background-color: #a7351e;
+    color: ivory;
     text-align: center;
+    width: 100%;
     padding: 15px 0;
 }
 
@@ -41,10 +43,32 @@ footer {
 }
 
 img {
-    max-width: 100%; /* Убедись, что картинки адаптируются */
-    height: auto;    /* Сохраняет пропорции */
+    max-width: 100%;
+    height: auto;
+}
+
+img.card-img-top {
+    height: 225px;
+    width: fit-content;
+}
+
+.card {
+    background-color: blanchedalmond;
 }
 
 .row {
-    margin-bottom: 20px; /* Отступы между строками */
+    margin-bottom: 20px;
+}
+
+#topButton {
+    position: fixed;
+    background: #a7351e;
+    bottom: 8pt;
+    left: 8pt;
+}
+
+@media(max-width:768px) {
+    #topButton {
+        display: none;
+    }
 }
