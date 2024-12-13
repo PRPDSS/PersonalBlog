@@ -1,6 +1,6 @@
 // Функция для загрузки содержимого страниц
 function loadPage(page) {
-    const pagePath = `../pages/${page}.html`;
+    const pagePath = `./pages/${page}.html`;
 
     fetch(pagePath)
         .then(response => {
