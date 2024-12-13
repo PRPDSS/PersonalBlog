@@ -38,7 +38,12 @@ footer {
     margin: 0 15px;
 }
 
+.site-header a:focus {
+    color: ivory;
+    text-decoration: none;
+}
 .site-header a:hover {
+    color:burlywood;
     text-decoration: underline;
 }
 
