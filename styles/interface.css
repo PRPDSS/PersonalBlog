@@ -42,8 +42,9 @@ footer {
     color: ivory;
     text-decoration: none;
 }
+
 .site-header a:hover {
-    color:burlywood;
+    color: burlywood;
     text-decoration: underline;
 }
 
@@ -65,9 +66,13 @@ img.card-img-top {
     margin-bottom: 20px;
 }
 
+.btn-primary {
+    background: maroon !important;
+    border: none !important;
+}
+
 #topButton {
     position: fixed;
-    background: #a7351e;
     bottom: 8pt;
     left: 8pt;
 }
