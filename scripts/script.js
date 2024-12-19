@@ -3,6 +3,7 @@ function changeBackgroundColor() {
     const newColor = '#' + Math.floor(Math.random() * 16777215).toString(16)
     // console.log(newColor)
     document.querySelector("main").style.backgroundColor = newColor
+    document.querySelector("body").style.backgroundColor = newColor
 }
 function toggleVisibility() {
     let elem = document.getElementById("visty-change")
