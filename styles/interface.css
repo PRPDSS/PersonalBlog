@@ -76,6 +76,8 @@ section {
 img {
     max-width: 100%;
     height: auto;
+    transition: transfotm 0.2s ease-in;
+    transform-style: preserve-3d;
 }
 
 img.card-img-top {
@@ -108,3 +110,21 @@ img.card-img-top {
         display: none;
     }
 }
+
+p {
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
